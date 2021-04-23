@@ -33,6 +33,7 @@ from persiantools import digits
                       "Esfand": "اسفند",
 
                       }
-        formated_time = f'{day_dict[str_day]} {digits.en_to_fa(int_day)} {month_dict[str_month]} {digits.en_to_fa(year)} ساعت {digits.en_to_fa(hour)}: {digits.en_to_fa(min)}:{digits.en_to_fa(sec)}'
-        print(formated_time)
+        formated_hour = f'{digits.en_to_fa(sec)} : {digits.en_to_fa(min)} : {digits.en_to_fa(hour)}'
+        print(formated_hour)
+        formated_time = f'{day_dict[str_day]} {digits.en_to_fa(int_day)} {month_dict[str_month]} {digits.en_to_fa(year)}ساعت  {formated_hour} '
         return formated_time
